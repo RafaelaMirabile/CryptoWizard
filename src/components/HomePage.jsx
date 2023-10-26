@@ -2,6 +2,8 @@ import { Col, Row, Statistic, Typography } from "antd";
 import React from "react";
 import { useGetCryptosQuery } from "../services/cryptoApi";
 import millify from "millify";
+import { CryptoCurrencies, News } from '../components';
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
     const { data, isFetching } = useGetCryptosQuery();
@@ -21,8 +23,18 @@ const HomePage = () => {
                 <Col span={12}><Statistic title="Total 24h Volume" value={millify(globalStats.total24hVolume)} /></Col>
                 <Col span={12}><Statistic title="Total Markets" value={millify(globalStats.totalMarkets)} /></Col>
             </Row>
+            <div className="home-heading-container">
+                <Typography.Title level={2} className="home-title">Top 10 Cryptos In The World</Typography.Title >
+                <Typography.Title level={3} className="show-more"><Link to="/cryptocurrencies">Show more</Link></Typography.Title >
+            </div>
+            <CryptoCurrencies simplified />
+            <div className="home-heading-container">
+                <Typography.Title level={2} className="home-title">Latest Crypto News</Typography.Title>
+                <Typography.Title level={3}><Link to="/news">Show more</Link></Typography.Title>
+            </div>
+            <News simplified />
         </>
     )
 }
-
+// simplified : only firts 10
 export default HomePage;
