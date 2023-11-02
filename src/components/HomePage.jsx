@@ -4,12 +4,13 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 import millify from "millify";
 import { CryptoCurrencies, News } from '../components';
 import { Link } from "react-router-dom";
+import Loader from './Loader';
 
 const HomePage = () => {
     const { data, isFetching } = useGetCryptosQuery(10);
     const globalStats = data?.data?.stats;
 
-    if (isFetching) return 'Loading..' // explain thi part! 
+    if (isFetching) return <Loader />;
 
     return (
         <>
