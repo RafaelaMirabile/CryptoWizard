@@ -37,5 +37,5 @@ const HomePage = () => {
         </>
     )
 }
-// simplified : only firts 10
+
 export default HomePage;

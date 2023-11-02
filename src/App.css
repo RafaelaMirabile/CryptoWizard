@@ -30,7 +30,6 @@ a:hover {
 .main {
     flex: 0.8;
     width: 100%;
-
 }
 
 .routes {
@@ -384,6 +383,7 @@ a:hover {
 
 .crypto-card-container {
     min-height: 65vh !important;
+    display: flex;
 }
 
 .crypto-card {
@@ -403,6 +403,6 @@ a:hover {
     background-color: #001529;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 4px;
     align-items: center;
 }
