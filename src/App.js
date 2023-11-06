@@ -2,7 +2,7 @@ import React from "react";
 import './App.css';
 import { Layout } from "antd";
 import { Routes, Route } from 'react-router-dom';
-import { HomePage, CryptoCurrencies, CryptoDetails, News, Navbar, Footer } from './components';
+import { HomePage, CryptoCurrencies, CryptoDetails, News, Navbar } from './components';
 import './App.css';
 
 export const App = () => {
@@ -22,9 +22,6 @@ export const App = () => {
             </Routes>
           </div>
         </Layout>
-        <div className="footer">
-          <Footer />
-        </div>
       </div>
     </div>
   );
