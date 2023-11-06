@@ -82,17 +82,29 @@ a:hover {
     .main {
         margin-left: 50px;
     }
+    .crypto-card-container{
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width:1170px) {
     .main {
         margin-left: 50px;
     }
+    .crypto-card-container{
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width:1000px) {
     .main {
         margin-left: 100px;
+    }
+    .crypto-card-container{
+        justify-content: center;
+        align-items: center;
     }
 }
 
